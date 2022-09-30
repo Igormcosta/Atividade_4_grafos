@@ -15,7 +15,7 @@ public class Main {
 	public static void main(String[] args) throws FileNotFoundException {
 		System.out.println("ATIVIDADE 1: ");
 		// adicionar o file do txt
-		File doc = new File("C:\\Users\\supor\\Desktop\\pequenoG.txt");
+		File doc = new File("C:\\Users\\supor\\Desktop\\pequenoG2.txt");
 		Scanner obj = new Scanner(doc);
 
 		alocar(grafos, obj);
@@ -41,12 +41,12 @@ public class Main {
 		System.out.println("\nDFS + IMPRESSÃO :");
 
 		// VERTICE INICIAL
-		int s = 0;
+		int s = 1;
 		System.out.println("\nDFS");
 		DFS(grafos, s);
 
 		// VERTICE FINAL
-		int v = 4;
+		int v = 36;
 		System.out.println("\nCAMINHO MENOR ENTRE " + s + " E " + v + ":");
 		impressao(grafos, s, v);
 	}
